@@ -10,7 +10,7 @@ router = Router()
 
 
 class FeedBack(StatesGroup):
-    write_feedback = State()  # Задаем состояние
+    write_feedback = State()
 
 
 @router.message(lambda message: message.text == "Оставить отзыв")
