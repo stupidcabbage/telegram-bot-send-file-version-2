@@ -16,7 +16,7 @@ class FeedBack(StatesGroup):
 
 @router.message(lambda message: message.text == "Оставить отзыв")
 async def feedback(message: types.Message, state: FSMContext):
-    await message.answer('Отправь все одним сообщением ниже:')
+    await message.answer('Отправь все одним сообщением ниже')
     await state.set_state(FeedBack.write_feedback)
 
 
