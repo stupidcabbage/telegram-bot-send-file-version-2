@@ -1,5 +1,4 @@
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardButton
-from aiogram.utils.keyboard import InlineKeyboardBuilder
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 
 def start_answer() -> ReplyKeyboardMarkup:
@@ -37,7 +36,7 @@ def back_and_feedback() -> ReplyKeyboardMarkup:
 def come_back() -> ReplyKeyboardMarkup:
     kb = [
         [
-        KeyboardButton(text="Назад")
+            KeyboardButton(text="Назад")
         ],
     ]
     keyboard = ReplyKeyboardMarkup(
